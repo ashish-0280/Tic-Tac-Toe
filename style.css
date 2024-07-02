@@ -6,6 +6,9 @@ body{
     background-color: #C880B7;
     text-align: center;
 }
+h1{
+    font-family: sans-serif;
+}
 .container{
     height: 70vh;
     display: flex;
