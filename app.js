@@ -14,6 +14,7 @@ let winningPatterns = [
     [0, 4, 8],
     [2, 4, 6]
 ];
+let count = 0;
 const disableBoxes = () => {
     boxes.forEach((box) => {
         box.disabled = true;
@@ -33,6 +34,7 @@ const restart = ()=>{
         enableBoxes();
         turn = true;
         messageContainer.classList.add("hide");
+        count = 0;
     })
 }
 let drawGame = () => {
@@ -58,7 +60,7 @@ let checkWinner = ()=>{
     }
     return false;
 }
-let count = 0;
+
 boxes.forEach((box) => {
     box.addEventListener("click", ()=>{
         if(box.innerText != "") return;
